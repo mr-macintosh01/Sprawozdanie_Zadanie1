@@ -110,26 +110,20 @@ CMD ["node", "index.js"]
   b. Uruchomienie kontenera na podstawie zbudowanego obrazu
   ```
   docker run -d -p 8080:8080 --name my-node-server my-node-server
-  ```
 
-  ```
   1dadfcff93234defca96f341e80839b2cf9402172318334de7b5e431138d8dc2
   ```
 
   c. Sposób uzyskania informacji, które wygenerował serwer w trakcie uruchamiana kontenera
   ```
   docker exec my-node-server cat /app/author.txter
-  ```
-  
-  ```
+
   Server built by Maksim Rymasheusk
   ```
 
   ```
   docker exec my-node-server cat /var/log/server.log
-  ```
 
-  ```
   Server started on 2024-06-01T14:33:37.967Z by Maksim Rymasheuski on port 8080
   ```
 
